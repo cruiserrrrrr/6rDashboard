@@ -1,0 +1,12 @@
+.settings_elem{
+    width: 100%;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .settings_elem__text{
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--white-color);
+    }
+}

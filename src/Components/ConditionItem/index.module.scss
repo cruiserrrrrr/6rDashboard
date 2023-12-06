@@ -1,0 +1,14 @@
+.condition_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    .condition_item__title{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        color: var(--white-color);
+    }
+}

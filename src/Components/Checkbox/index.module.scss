@@ -1,0 +1,20 @@
+.checkbox {
+    display: none;
+}
+
+.checkbox+.custom_checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--white-disable);
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: var(--background-black);
+    transition: .25s;
+}
+
+.checkbox:checked+.custom_checkbox {
+    background-size: 3px 3px;
+    background-position: 50% 50%;
+    background: var(--gradient);
+    border: 1px solid var(--white-color);
+}

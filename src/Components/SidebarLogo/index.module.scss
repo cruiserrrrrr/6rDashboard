@@ -1,0 +1,18 @@
+.logo_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        font-size: 52px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: normal;
+        background: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        user-select: none;
+    }
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "value": "Main",
+        "iconName": "main",
+        "to": "/",
+        "title": "main"
+    },
+    {
+        "value": "Database",
+        "iconName": "db",
+        "to": "/database",
+        "title": "Database"
+    },
+    {
+        "value": "History",
+        "iconName": "history",
+        "to": "/history",
+        "title": "History"
+    },
+    {
+        "value": "Statistics",
+        "iconName": "statistics",
+        "to": "/statistics",
+        "title": "Statistics"
+    },
+    {
+        "value": "Settings",
+        "iconName": "settings",
+        "to": "/settings",
+        "title": "Settings"
+    },
+    {
+        "value": "Inventory",
+        "iconName": "inventory",
+        "to": "/inventory",
+        "title": "Inventory"
+    }
+]

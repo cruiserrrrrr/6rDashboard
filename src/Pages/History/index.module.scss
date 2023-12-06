@@ -1,0 +1,32 @@
+.history_wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 6px;
+    .history_filters{
+        width: 30%;
+        height: 100%;
+    }
+    .history_list{
+        width: 70%;
+        height: 100%;
+        .history_container{
+            padding: 6px 6px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 6px;
+            max-height: 939px;
+            overflow: scroll;
+            overflow-x: hidden;
+            .log_element{
+                width: 100%;
+                color: var(--white-color);
+                border: 1px solid var(--white-color);
+                padding: 6px 4px;
+                border-radius: 6px;
+            }
+        }
+        
+    }
+}

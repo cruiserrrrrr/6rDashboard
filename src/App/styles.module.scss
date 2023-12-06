@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background-black: #121212;
+    --background-grey: #1d1d1d;
+    --white-color: #FFFFFF;
+    --white-disable: rgba(243, 243, 243, 0.685);
+    --grey-transparent: rgba(134, 134, 134, 0.301);
+    --black-transparent: rgba(0, 0, 0, 0.596);
+    --gradient: linear-gradient(242deg, rgba(218, 67, 242, 0.80) -35.11%, rgba(86, 101, 244, 0.80) 132.61%);
+    --gradient-text: linear-gradient(246deg, rgba(226, 140, 240, 0.80) 17.89%, rgba(54, 52, 171, 0.80) 191.75%);
+    --gradient-dark: linear-gradient(237deg, rgba(226, 140, 240, 0.10) -11.36%, rgba(54, 52, 171, 0.10) 109.13%);
+    --border-gradient: radial-gradient(circle at 100% 100%, #121212 0, #121212 6.5px, transparent 6.5px) 0% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 0 100%, #121212 0, #121212 6.5px, transparent 6.5px) 100% 0%/8px 8px no-repeat,
+        radial-gradient(circle at 100% 0, #121212 0, #121212 6.5px, transparent 6.5px) 0% 100%/8px 8px no-repeat,
+        radial-gradient(circle at 0 0, #121212 0, #121212 6.5px, transparent 6.5px) 100% 100%/8px 8px no-repeat,
+        linear-gradient(#121212, #121212) 50% 50%/calc(100% - 3px) calc(100% - 16px) no-repeat,
+        linear-gradient(#121212, #121212) 50% 50%/calc(100% - 16px) calc(100% - 3px) no-repeat,
+        linear-gradient(36deg, #e28cf0 0%, #3634ab 100%);
+    --pink-color: #E28CF0;
+    --pinl-second-color: #a05cca;
+    --red-color: #e64747;
+    --green-color: #34AB40;
+    --blue-color: #3634AB;
+    --border: 10px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Kanit';
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: var(--gradient);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.app {
+    background: var(--gradient);
+    // background: var(--background-grey);
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 6px 6px;
+    gap: 6px;
+}

@@ -1,0 +1,10 @@
+.module_wrapper{
+    width: 100%;
+    height: auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background-color: var(--background-black);
+    border-radius: var(--border);
+    border: 1px var(--white-color) solid;
+}

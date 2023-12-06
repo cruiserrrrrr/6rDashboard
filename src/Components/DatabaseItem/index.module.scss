@@ -1,0 +1,92 @@
+.database_item {
+    position: relative;
+    width: 100%;
+    // background: var(--background-grey);
+    background: var(--border-gradient);
+    box-sizing: border-box;
+    // border-bottom: 1px solid var(--white-color);
+    // border-top: 1px solid var(--white-disable);
+    border-radius: 10px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    color: var(--white-color);
+
+    .database_item__name {
+        padding: 2px 2px;
+        width: 100%;
+        max-width: 230px;
+        transition: .15s;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+
+        .name_title {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .name_title:active {
+            background-color: var(--grey-transparent);
+            border-radius: 20px;
+        }
+
+        .link_steam {
+            width: 26px;
+            height: 26px;
+            background-image: url(../../assets/images/steam_logo.png);
+            background-size: 100% 100%;
+        }
+    }
+
+    .database_item__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+    }
+
+    .database_item__float {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+    }
+
+    .database_item__status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 58px;
+    }
+
+    .database_item__checkfloat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .database_item__options {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+        max-width: 80px;
+    }
+}
+
+.item_active {
+    border-left: var(--green-color);
+}
+
+.item_disable {
+    border-left: var(--red-color);
+}

@@ -1,0 +1,109 @@
+.database_table__wrapaper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .database_table {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 0 14px 10px;
+        max-height: 938px;
+        overflow-y: scroll;
+
+        .database_table__head {
+            position: sticky;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: 1px solid var(--white-color);
+            background: var(--background-black);
+            padding: 16px 6px 10px;
+            z-index: 10;
+
+            .head_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                width: 100%;
+
+                color: var(--white-color);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                .name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 190px;
+                }
+
+                .price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 100px;
+                }
+
+                .float {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 100px;
+                }
+
+                .checkflaot {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 80px;
+                }
+
+                .sticker {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 58px;
+                }
+
+                .special {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 58px;
+                }
+
+                .status {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 58px;
+                }
+
+                .options {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 80px;
+                }
+            }
+        }
+
+        .database_table__body {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            height: auto;
+            margin-top: 16px;
+        }
+    }
+}

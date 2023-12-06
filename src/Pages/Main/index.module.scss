@@ -1,0 +1,67 @@
+.main_wrapper {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr 1fr 1fr;
+    gap: 6px 6px;
+    grid-template-areas:
+        "header header header header"
+        "settings logs logs logs"
+        "settings logs logs logs"
+        "table table table table";
+
+    .header {
+        width: 100%;
+        height: auto;
+        grid-area: header;
+    }
+
+    .settings {
+        width: 100%;
+        // background-color: var(--background-black);
+        // border-radius: 10px;
+        // border: 1px solid var(--white-color);
+        grid-area: settings;
+    }
+
+    .logs {
+        background-color: var(--background-black);
+        border-radius: 10px;
+        border: 1px solid var(--white-color);
+        grid-area: logs;
+        max-height: 629px;
+
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        .logs_header{
+            font-size: 22px;
+            line-height: 22px;
+            color: var(--white-color);
+            margin-bottom: 10px;
+        }
+        .logs_wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            max-height: 597px;
+            overflow: scroll;
+            overflow-x: hidden;
+            .log_ok{
+                color: #307c4d;
+            }
+            .log_error{
+                color: #7c3030;
+            }
+        }
+    }
+
+    .table {
+        background-color: var(--background-black);
+        border-radius: 10px;
+        border: 1px solid var(--white-color);
+        grid-area: table;
+    }
+}
