@@ -27,9 +27,6 @@ const History = () => {
         getHistoryList()
     }, [])
     const savedList = historyList
-    const filtredStatus = (status) => {
-
-    }
 
     return (
         <div className={styles.history_wrapper}>
@@ -52,7 +49,6 @@ const History = () => {
                                     key={index}
                                 >
                                     <p>{elem.message}, {elem.status}, {elem.date}</p>
-                                    {/* <p>{elem.status}</p> */}
                                 </div>
                             ))
                         }

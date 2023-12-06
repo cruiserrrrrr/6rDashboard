@@ -15,16 +15,9 @@ const AddSkin = () => {
     const [floatValue, setFloatValue] = useState(0)
     const [maxMarkUpValue, setmaxMarkUpValue] = useState(0)
 
-    const test = true
-    const testToggle = (messege) => {
-        console.log(messege)
-    }
+
     const toggledTg = async () => {
         setCheckBox(!checkBox)
-        test ?
-            testToggle('on')
-            :
-            testToggle('of')
     }
 
     const postItem = () => {
@@ -62,10 +55,30 @@ const AddSkin = () => {
                 <div className={styles.add_skin__container}>
                     <p className={styles.add_skin__title}>Add skin</p>
                     <div className={styles.inputs_container}>
-                        <CustomInput placeholder="skin name" type="text" onChange={(event) => setNameValue(event.target.value)} value={nameValue} />
-                        <CustomInput placeholder="max price" type="number" onChange={(event) => setMaxPriceValue(event.target.value)} value={maxPriceValue} />
-                        <CustomInput placeholder="float" type="number" onChange={(event) => setFloatValue(event.target.value)} value={floatValue} />
-                        <CustomInput placeholder="max markup" type="number" onChange={(event) => setmaxMarkUpValue(event.target.value)} value={maxMarkUpValue} />
+                        <CustomInput
+                            placeholder="skin name"
+                            type="text"
+                            onChange={(event) => setNameValue(event.target.value)}
+                            value={nameValue}
+                        />
+                        <CustomInput
+                            placeholder="max price"
+                            type="number"
+                            onChange={(event) => setMaxPriceValue(event.target.value)}
+                            value={maxPriceValue}
+                        />
+                        <CustomInput
+                            placeholder="float"
+                            type="number"
+                            onChange={(event) => setFloatValue(event.target.value)}
+                            value={floatValue}
+                        />
+                        <CustomInput
+                            placeholder="max markup"
+                            type="number"
+                            onChange={(event) => setmaxMarkUpValue(event.target.value)}
+                            value={maxMarkUpValue}
+                        />
                     </div>
                     <div className={styles.conditions_container}>
                         <ConditionItem title={'View float:'} checked={checkBox} onToggled={() => toggledTg()} />

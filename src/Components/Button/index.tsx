@@ -5,7 +5,7 @@ interface IButton {
     size?: string,
     color?: string,
     text?: string | number,
-    onClick?: (string) => void,
+    onClick?: (any) => void,
 }
 
 const Button = (props: IButton) => {

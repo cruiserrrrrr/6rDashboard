@@ -10,13 +10,8 @@ const Main = () => {
     const [serverMessages, setServerMessages] = useState([]);
 
     useEffect(() => {
-        // Устанавливаем обработчик события 'server_message'
-        //   socket.on('market_data', (message) => {
-        //     setServerMessages((prevMessages) => [...prevMessages, message]);
-        //   });
         socket.on('server_message', function (data) {
             setServerMessages((prevMessages) => [...prevMessages, data]);
-            console.log(data.message, 'аааа')
         });
         return () => {
             socket.disconnect();
